@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="A fake pizza place's website">
+      <meta name="robots" content="noindex, nofollow">
+      <title>Assignment 2 | Pizza Website</title>
+      <!-- add Google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+      
+      <!-- add our CSS -->
+      <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+          <!--Logo Container-->
+          <div>
+            <a href="index.html">
+                <img src="./img/pizzaLogo.png" alt="Public Domain Pizza Place Logo">
+                <p>Pizza Peter's Pizzaria</p>
+            </a>
+          </div>
+          <!--Navigation Bar-->
+          <nav>
+            <menu>
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">About Us</a></li>
+            </menu>
+          </nav>
+        </header>
+        <!--Grid container for Main, Aside, Footer-->
+        <div class="main_grid">
+
+            <section class="masthead">
+                <h1>Pizza Peter's Pizzaria</h1>
+                <img src="./img/PizzaHeroImg.jpg" alt="A pizza on a wood counter top beside its toppings">
+            </section>
+        
+            <main>
+                <section>
+                    <div>
+                        <!--Pizza Design & Order Form-->
+                        <!--I don't eat pizza so don't blame me if your favorite options aren't there-->
+                        <form action="placeholderfile" method="post">
+                            <!--Pick a size of pizza-->
+                            <h3>1.Amount & Size</h3>
+                            
+                            
+                            <p>
+                                <input type="radio" id="10''" name="size" value="10''" checked><!--Selected by default-->
+                                    <label for="10''">10''</label>
+                                <input type="radio" id="12''" name="size" value="12''">
+                                    <label for="12''">12''</label>
+                                <input type="radio" id="14''" name="size" value="14''">
+                                    <label for="14''">14''</label>
+                                <input type="radio" id="16''" name="size" value="16''">
+                                    <label for="16''">16''</label>
+                            </p>
+                            <!--Pick a sauce & how much cheese you want-->
+                            <h3>2. Sauce & Cheese</h3>
+                            <label>Sauce</label>
+                            <!--Options: Pizza Sauce, BBQ-->
+                            <p>
+                                <input type="radio" id="regularS" name="sauce" value="regular" checked><!--Selected by default-->
+                                    <label for="regularS">Pizza Sauce</label>
+                                <input type="radio" id="BBQ" name="sauce" value="BBQ">
+                                    <label for="BBQ">BBQ</label>
+                            </p>
+                            <!--Cheese amount picker-->
+                            <label>Cheese</label>
+                            <!--Options: Regular, None, Light, Extra, Double-->
+                            <p>
+                                <input type="radio" id="noneC" name="Pizza_size" value="none">
+                                    <label for="noneC">None</label>
+                                <input type="radio" id="lightC" name="Pizza_size" value="light">
+                                    <label for="lightC">Light</label>
+                                <input type="radio" id="regularC" name="cheese" value="regular" checked><!--Selected by default-->
+                                    <label for="regularC">Regular</label>
+                                <input type="radio" id="extraC" name="Pizza_size" value="extra">
+                                    <label for="extraC">Extra</label>
+                                <input type="radio" id="doubleC" name="Pizza_size" value="double">
+                                    <label for="doubleC">Double</label>
+                            </p>
+                            <!--Toppings Picker-->
+                            <h3>3. Toppings</h3>
+                            <label>Choose Meats</label>
+                            <!--Options: Pepperoni, Ham, Bacon, Chicken-->
+                            <p>
+                                <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+                                    <label for="pepperoni">Pepperoni</label>
+                                <input type="checkbox" id="ham" name="toppings" value="ham">
+                                    <label for="ham">Ham</label>
+                                <input type="checkbox" id="bacon" name="toppings" value="bacon">
+                                    <label for="bacon">Bacon</label>
+                                <input type="checkbox" id="chicken" name="toppings" value="chicken">
+                                    <label for="chicken">Chicken</label>
+                            </p>
+                            <label>Choose Non-Meats</label>
+                            <!--Options: Mushroom, Green Pepper, Olives, Pineapple-->
+                            <p>
+                                <input type="checkbox" id="mushroom" name="toppings" value="mushroom">
+                                    <label for="mushroom">Mushroom</label>
+                                <input type="checkbox" id="green_pepper" name="toppings" value="green_pepper">
+                                    <label for="green_pepper">Green Pepper</label>
+                                <input type="checkbox" id="olives" name="toppings" value="olives">
+                                    <label for="olives">Olives</label>
+                                <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
+                                    <label for="pineapple">Pineapple</label>
+                            </p>
+                            
+                            <h3>4. Instructions</h3>
+                            <p>
+                                <input type="radio" id="delivery" name="delivery" value="delivery" checked>
+                                    <label for="delivery">Delivery</label>
+                                <input type="radio" id="take_out" name="delivery" value="take_out">
+                                    <label for="take_out">Take Out</label>
+                            </p>
+                            <label>Phone Number</label>
+                            <p><input type="tel" name="phone" placeholder="(123)456-7890" pattern="([0-9]{3})[0-9]{3}-[0-9]{4}" required></p>
+
+                            <label>Special Instructions</label>
+                            <p><textarea placeholder="Leave a message..." maxlength="240"></textarea></p>
+                            <h4>Limit: 240 Characters</h4>
+
+                            <p><input type="submit" value="Order"></p>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <aside><!-- Using the aside to display fake ads/offers from the pizzaria -->
+                <article>
+                    <figure>
+                        <a href="#"><img src="./img/pizza_ad_1.jpg" alt="Close up of a pizza on cardboard"></a>
+                        <figcaption>Any Large Pizza $16.99</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <a href="#"><img src="./img/pizza_ad_2.jpg" alt="Half a pizza on the left of a wooden surface"></a>
+                        <figcaption>BOGO Medium Pizza $14.99</figcaption>
+                    </figure>
+                </article>
+            </aside>
+            <footer>
+                <div><!-- Grid container 2 column row -->
+                    <div>
+                        <h6>Contact us</h6>
+                        <menu>
+                            <li>+1(123)456-7890</li>
+                            <li>PizzaPeter@fake.email.no</li>
+                        </menu>
+                    </div>
+                    <div>
+                        <h6>Info</h6>
+                        <menu>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </menu>
+                    </div>
+                </div>
+                <h6>Copywrong 🅮 2024 Peter's Pizza</h6><!-- Broken Ascii symbol is intentional -->
+            </footer>
+        </div>
+    </body>
+</html>

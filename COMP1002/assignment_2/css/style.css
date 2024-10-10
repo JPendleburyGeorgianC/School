@@ -1,0 +1,218 @@
+/**Joshua Pendlebury - 2024-10-09**/
+/** Setup & defaults**/
+body{
+    margin: 0px;
+    background-color:#f8f8f8;
+}
+h1{
+    font-family: "Dancing Script", sans-serif;
+    color: #f8f8f8;
+}
+h2,h3,h4,h5,h6{
+    font-family: "Poppins", sans-serif;/** Debated using Dancing Script for all headers, but decided to keep Poppins for accessability**/
+    color: #f8f8f8;
+}
+h6{
+    font-size: 16px;/**Keeping minimum text size at 16px for accessability**/
+}
+p,a,li,figcaption,label{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #f8f8f8;
+}
+li{
+    list-style-type: none;
+}
+textarea,input{
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    resize: none;
+    background-color: #eeeeee;
+}
+input[type=submit]{
+    background-color: #134B70;
+    width: 100px;
+    height: 38px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    border: none;
+    color: #f8f8f8;
+    border-radius: 8px;
+}
+input[type=submit]:active{/** Makes button darker when pressed **/
+    background-color: #0f3b58;
+}
+
+
+/** Header **/
+header{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #201E43;
+}
+/** Header Logo **/
+header > div{
+    height: 90%;
+    width: auto;
+    flex-grow: 1;
+}
+header > div > a{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+header > div > a > img{
+    width: auto;
+    height: 100%;
+}
+header > div > a > p{
+    text-align: left;
+    font-family: "Dancing Script", sans-serif;
+    font-size: 32px;
+    width: 200px;
+    margin-left: 10px;
+}
+/** Header Nav Bar **/
+header > nav > menu{
+    list-style: none;
+    padding-left:0px;
+    margin: 0px;
+    display: flex;
+}
+header > nav > menu > li{
+    height: 100%;
+    padding: 0px 10px;
+    border-left: #14132b solid 2px;
+}
+
+.main_grid{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'hero hero'
+        'main aside'
+        'footer footer';
+}
+
+.masthead{
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    background-color: #508C9B;
+}
+.masthead > img{
+    height: 100%;
+    width: 100%;/** would normally use "auto" here but the image needs to take up the whole background of the masthead**/
+    filter: opacity(0.5);/** Making the image transparent so the background can tint it **/
+    z-index: 1;/** Forcing the image under the text **/
+}
+.masthead > h1{
+    position: absolute;/** Prevents image from moving text out of the way **/
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+    z-index: 2;/** forcing the text above the image **/
+}
+
+main{
+    grid-area: main;
+    /** I tried to put the order form in a centered column but it didn't work, instead throwing the main under the aside **/
+    /**display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: 
+        'blank form blank';**/
+}
+main > section{
+    /**grid-area: form;**/
+    border: solid 3px #201E43;
+    text-align: center;
+}
+main > section > div > form > h3{
+    font-size: 25px;
+    background-color: #201E43;
+}
+main > section > div > form > label{
+    font-weight: bold;
+    color: #134B70;
+}
+main > section > div > form > p > label{
+    font-size: 16px;
+    color: #4a4a4a;
+}
+main > section > div > form > h4{
+    font-size: 18px;
+    color: #134B70;
+}
+main > section > div > form > p > textarea{
+    width: 40%;
+    height: 20vh;
+}
+::placeholder{
+    font-family: "Roboto",sans-serif;
+}
+
+aside{
+    grid-area: aside;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    background-color: #201E43;
+}
+aside > article{
+    width: 100%;
+}
+aside > article > figure{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: #134B70;
+    width: 80%;
+}
+aside > article > figure > a > img{
+    width: 98%;
+    height: auto;
+    margin: 1%;
+    filter: opacity(0.75);/** allows the background to slightly tint the image which makes it easier to read the text on top of it **/
+}
+aside > article + article > figure > a > img{
+    filter: opacity(1);/** image already works well with the text on top of it so I'm overwriting the transparency **/
+}
+aside > article > figure > figcaption{
+    position: absolute;
+    transform: translate(50%);/** shifts the text right so that it is centered **/
+    font-family: "Dancing Script", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    width: 200px;
+}
+aside > article + article > figure > figcaption{
+    transform: translate(80%);/** shifts the text right so it fits the image **/
+}
+
+
+footer{
+    grid-area: footer;
+    height: 250px;
+    background-color: #14132b;
+}
+footer > div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+footer h6{/** Non-specific targeting because I want all h6s in the footer to have the margin **/
+    margin-left: 40px;
+}
+footer > div > div > menu > li{
+    font-size: 16px;
+}
+footer > div > div > menu > li > a{
+    font-size: 16px;
+}
