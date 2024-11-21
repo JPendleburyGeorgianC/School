@@ -1,0 +1,186 @@
+/* Joshua Pendlebury - 200618730
+2024-11-17
+COMP10__ - Assignment 3 Poster */
+
+/* Importing local fonts */
+/* Sony's logo font */
+@font-face{
+    font-family: "Clarendon";
+    src: url(../fonts/clarendon/Clarendon_Regular.otf);
+}
+/* A free version of the poster credits font that contains little cheats for poster making that I didn't use */
+@font-face {
+    font-family: "Universal Accreditation";
+    src: url(../fonts/universal_accreditation/Uni_acc.ttf);
+}
+/* GrubaBerta is a free font that looks similar to the font Sony used for "ANIMATION" in their SONY PICTURES ANIMATION logo */
+@font-face {
+    font-family: "GrubaBerta";
+    src: url(../fonts/GrubaBerta_Regular/GrubaBerta_Regular.ttf);
+}
+/* Bank Gothic for the Columbia Pictures Logo */
+@font-face {
+    font-family: "Bank Gothic";
+    src: url(../fonts/bankgothic-md-bt/Bank\ Gothic\ Light\ Regular.otf);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/spiderverse_poster_project.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+main{
+    display: flex;
+    align-items: center;
+    margin-top: 127.25%;
+}
+h1{
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    color: #ececec;
+    /*Using text-shadow to get the double drop shadow on "INTO THE SPIDER-VERSE"*/
+    text-shadow: 1px -1px #000000,2px -2.5px #c8293d;
+    
+}
+p,span,figcaption,h6{
+    color: #9312a2;
+    margin: 0px;
+}
+figcaption,h6{
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer > div{
+    display: flex;
+    align-items: baseline;
+}
+
+/* Formatting the 3 different sizes of text in the credits section of the poster */
+.credits span{
+    font-family: "Universal Accreditation";
+}
+
+.credit_big{
+    font-size: 30px;
+    margin-right: 2px;
+}
+/*Was for superscript TM but I found the &trade; HTML entity
+.credit_big > sup{ 
+    font-size: 6px;
+}*/
+.credit_med{
+    font-size: 22.5px;
+    margin-right: 2.5px;
+}
+.credit_small{
+    display: flex;
+    flex-direction: column;
+    /* The small font needs to be aligned to the top of the big text */
+    align-self: flex-start;
+    margin:3px 0px 0px;
+}
+.credit_small > span{
+    font-size: 11.25px;
+    text-align: right;
+}
+
+.logos{
+    height: 110px;
+    align-items: center;
+}
+.logos figure,.logos a, div{
+    height: 100%;
+    margin: 0px 5px;
+}
+.logos img{
+    height: 37%;
+    width: auto;
+}
+.marvel{
+    height: 100%;
+}
+.marvel > figcaption{
+    font-size: 6px;
+}
+.sony_anim, .dolby, .columbia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sony_anim > p{
+    font-family: sans-serif;
+    font-size: 9.5px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.sony_anim > h6{
+    font-family: "GrubaBerta";
+    font-size: 12px;
+}
+.pascal > img{
+    height: 30%;
+}
+.dolby > img{
+    height: 10%;
+    margin: 0px 0px 2px;
+}
+.dolby > figcaption{
+    outline-width: 0.5px;
+    outline-color: #9312a2;
+    outline-style: solid;
+    font-size: 9.5px;
+    font-weight: bold;
+}
+.hashtag > a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hashtag > a > h6{
+    font-size: 14px;
+}
+.sony > h6{
+    font-family: "Clarendon";
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+.columbia > div{
+    display: flex;
+    height: 27%;
+    margin: 0px;
+}
+.columbia > div > h6{
+    font-family: "Bank Gothic";
+    font-size: 14px;
+    text-align: center;
+    margin-right: 5px;
+}
+.columbia > div > img{
+    height: 100%;
+}
+.columbia > img{
+    height: 8px;
+    width: 100%;
+    margin-top: 2px;
+}
+.columbia > p{
+    font-family: sans-serif;
+    font-size: 8px;
+}

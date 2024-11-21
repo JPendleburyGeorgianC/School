@@ -1,0 +1,121 @@
+<!-- Joshua Pendlebury - 200618730
+2024-11-17
+COMP10__ - Assignment 3 Poster -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spider-Man Into the Spider-Verse Poster">
+    <meta name="robots" content="noindex, nofollow"><!-- Not picked up by search engines -->
+    <title>Spider-Man into the Spider-Verse</title>
+    <!-- Adding Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <!-- Advent Pro for Sony Animations logo -->
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <!-- Adding CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <main>
+      <!-- Second half of the title (The first half is in the background image) -->
+      <a href="https://youtu.be/g4Hbz2jLxvQ?si=xWcUdupP7WdlGiEP"><h1>INTO THE SPIDER-VERSE</h1></a>
+    </main>
+    <footer>
+      <!-- The footer contains all the credits in which, each section is one line and every change in font size has to be in a separate <p> element so it can be properly formatted 
+      There are 3 sizes of text in the credits which are represented as "credit_big" for the largest text, "credit_med" for medium, and "credit_small" -->
+      <!-- Using &ensp; for double space -->
+      <div class="credits">
+        <span class="credit_big">COLUMBIA PICTURES</span>
+        <span class="credit_med">PRESENTS IN ASSOCIATION WITH </span>
+        <span class="credit_big">MARVEL</span>
+        <span class="credit_med">AN </span>
+        <span class="credit_big">AVI ARAD/LORD MILLER/PASCAL PICTURES</span>
+        <span class="credit_med">PRODUCTION  A</span>
+        <span class="credit_big">SONY PICTURES ANIMATION</span>
+        <span class="credit_med">FILM </span>
+        <span class="credit_big">'SPIDER-MAN&trade;: INTO THE SPIDER-VERSE'</span>
+      </div>
+
+      <div class="credits"><!-- The font I'm using overwrites the Ë in ZOË KRAVITZ so I just use a normal E-->
+        <span class="credit_big">SHAMEIK MOORE  JAKE JOHNSON  HAILEE STEINFELD  MAHERSHALA ALI  BRIAN TYREE HENRY  LILY TOMLIN  LUNA LAURIN VELEZ  ZOE KRAVITZ  JOHN MULANEY </span>
+        <span class="credit_med">WITH </span>
+        <span class="credit_big">NICOLAS CAGE</span>
+      </div>
+
+      <div class="credits">
+        <span class="credit_big">KATHRIN HAHN </span>
+        <span class="credit_med">AND </span>
+        <span class="credit_big">LIEV SCHREIBER </span>
+        <div class="credit_small"><span>MUSIC</span><span>BY</span></div>
+        <span class="credit_big">DANIEL PEMBERTON </span>
+        <div class="credit_small"><span>EXECUTIVE</span><span>PRODUCERS</span></div>
+        <span class="credit_big">STAN LEE  BRIAN MICHEAL BENDIS  WILL ALLEGRA </span>
+        <div class="credit_small"><span>BASED&nbsp;ON</span><span>THE</span></div>
+        <span class="credit_big">MARVEL COMICS </span>
+        <div class="credit_small"><span>WRITTEN</span><span>BY</span></div>
+        <span class="credit_big">PHIL LORD</span>
+      </div>
+
+      <div class="credits">
+        <div class="credit_small"><span>SCREENPLAY</span><span>BY</span></div>
+        <span class="credit_big">PHIL LORD</span><span class="credit_med">AND</span><span class="credit_big">RODNEY ROTHMAN</span>
+        <div class="credit_small"><span>PRODUCED</span><span>BY</span></div>
+        <span class="credit_big">AVI ARAD&ensp;AMY PASCAL&ensp;PHIL LORD&ensp;CHRISTOPHER MILLER&ensp;CHRISTINA STEINBERG</span>
+        <div class="credit_small"><span>DIRECTED</span><span>BY</span></div>
+        <span class="credit_big">BOB PERSICHETTI&ensp;PETER RAMSEY&ensp;RODNEY ROTHMAN</span>
+      </div>
+
+      <div class="logos">
+        <a href="https://www.marvel.com/">
+         <figure class="marvel">
+            <!-- Text on top of the Marvel logo is illegible so I didn't include it -->
+            <img src="./img/marvel_logo.png" alt="The Marvel Logo">
+            <!-- The figcaption has to all be on one line on the poster so non-breaking spaces prevent that -->
+            <figcaption>&reg;&nbsp;MARVEL&nbsp;&copy;&nbsp;2014&nbsp;SPA&nbsp;&&nbsp;CPI</figcaption>
+          </figure>
+        </a>
+
+        <div class="sony_anim">
+          <p>SONY&nbsp;PICTURES</p>
+          <h6>ANIMATION</h6>
+        </div>
+
+        <figure class="pascal">
+          <img src="./img/Pascal_Pictures_logo.png" alt="Pascal Pictures logo">
+        </figure>
+
+        <figure class="PG">
+          <img src="./img/PGRating.png" alt="PG Rating">
+        </figure>
+
+        <figure class="dolby">
+          <img src="./img/dolby-digital-logo-2017.png" alt="Dolby Digital logo">
+          <figcaption>Soundtrack&nbsp;on&nbsp;Republic&nbsp;Records</figcaption>
+        </figure>
+
+        <div class="hashtag">
+          <a href="https://www.sonypictures.com/movies/spidermanintothespiderverse">
+            <h6>#SpiderVerse</h6>
+            <h6>IntoTheSpiderVerse.Movie</h6>
+          </a>
+        </div>
+
+        <figure class="sony">
+          <h6>SONY</h6>
+        </figure>
+
+        <div class="columbia">
+          <div><!-- This second <div> allows for the logo and the text to be placed side by side using flex in CSS -->
+            <h6>COLUMBIA<br>PICTURES</h6>
+            <img src="./img/Columbia_Tristar.png" alt="Columbia Pictures logo">
+          </div>
+          <!-- These three lines could have been 3 lines of text but I cannot find what it's supposed to say if so -->
+          <img src="./img/Columbia_lines.png" alt="3 lines joined at the left by a vertical line">
+          <p>a Sony Company</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
