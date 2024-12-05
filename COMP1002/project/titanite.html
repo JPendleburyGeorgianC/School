@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head id="head">
+    <meta name="description" content="Titanite Store Page">
+    <title>Rick's Rocks | Titanite</title>
+    <!-- Adding jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- Adding JS file -->
+    <script type="text/javascript" src="./js/script.js"></script>
+  </head>
+  <body>
+    <header id="Global-Header"></header>
+    <main class="storefront-Main">
+        <div class="growImgContainer">
+            <div class="growImg">
+                <img class="bigImg" src="./img/titanite/crystals-titanite-sphene-calcium-titanium_696657-37865.png" alt="Chunk of raw titanite">
+                <img class="bigImg" src="./img/titanite/raw-titanite-sphene-rock-isolated-white.png" alt="Chunk of raw titanite">
+                <img class="bigImg" src="./img/titanite/specimen-titanite-sphene-calcium-titane_696657-38114.png" alt="Chunk of raw titanite">
+            </div>
+            <div class="images">
+                <img class="smallImg" src="./img/titanite/crystals-titanite-sphene-calcium-titanium_696657-37865.png" alt="Chunk of raw titanite">
+                <img class="smallImg" src="./img/titanite/raw-titanite-sphene-rock-isolated-white.png" alt="Chunk of raw titanite">
+                <img class="smallImg" src="./img/titanite/specimen-titanite-sphene-calcium-titane_696657-38114.png" alt="Chunk of raw titanite">
+            </div>
+        </div>
+        <section class="shopPanel">
+          <h2>Titanite Chunk</h2>
+          <form action="placeholder" method="post">
+            <div>
+              <div>
+                <p><input type="radio" id="10lbs" name="size" value="10lbs" checked><!--Selected by default-->
+                  <label for="10lbs">10lbs</label></p>
+                <p>220$</p>
+              </div>
+              <div>
+                <p><input type="radio" id="30lbs" name="size" value="30lbs">
+                  <label for="30lbs">30lbs</label></p>
+                <p>600$</p>
+              </div>
+              <div>
+                <p><input type="radio" id="50lbs" name="size" value="50lbs">
+                  <label for="50lbs">50lbs</label></p>
+                <p>1200$</p>
+              </div>
+            </div>
+            
+            <p><input class="Button" type="submit" value="Purchase"></p>
+          </form>
+      </section>
+    </main>
+    <aside>
+      <div id="featuredStore"></div>
+    </aside>
+    <footer id="Global-Footer"></footer>
+  </body>
+</html>
